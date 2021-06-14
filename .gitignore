@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+# PyCharm IDEA files
+.idea
+
+# Virtual Env files
+bin/*
+pyvenv.cfg
+
 # Distribution / packaging
 .Python
 build/
