@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block header %}
+    {% endblock %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'playthrough_recorder/style.css' %}">
+</head>
+<body>
+    <div class="topnav">
+      <a class="active" href="{% url 'homepage' %}">Home</a>
+      <a href="{% url 'new_playthrough' %}">New Playthrough</a>
+      <a href="{% url 'new_game' %}">New Game</a>
+      <a href="{% url 'new_player' %}">New Player</a>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+
+</body>
+</html>
